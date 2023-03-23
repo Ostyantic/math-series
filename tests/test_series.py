@@ -52,8 +52,44 @@ def test_fibonacci_negative():
     assert actual == expected
 
 
+# lucas test 1
 def test_lucas_exists():
     assert lucas(0)
+
+
+# lucas test 2
+def test_lucas_zero():
+    actual = lucas(0)
+    expected = 2
+    assert actual == expected
+
+
+# lucas test 3
+def test_lucas_one():
+    actual = lucas(1)
+    expected = 1
+    assert actual == expected
+
+
+# lucas test 5
+def test_lucas_five():
+    actual = lucas(5)
+    expected = 11
+    assert actual == expected
+
+
+# lucas test 6
+def test_lucas_fifteen():
+    actual = lucas(15)
+    expected = 1364
+    assert actual == expected
+
+
+# lucas test 7
+def test_lucas_negative():
+    actual = lucas(-1)
+    expected = 2
+    assert actual == expected
 
 
 def test_sum_series_exists():
