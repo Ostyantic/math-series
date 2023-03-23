@@ -31,14 +31,14 @@ def test_fibonacci_two():
     assert actual == expected
 
 
-# fibonacci test 4
+# fibonacci test 5
 def test_fibonacci_five():
     actual = fibonacci(5)
     expected = 5
     assert actual == expected
 
 
-# fibonacci test 5
+# fibonacci test 6
 def test_fibonacci_eleven():
     actual = fibonacci(11)
     expected = 89
