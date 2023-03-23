@@ -13,7 +13,7 @@ def fibonacci(n=1):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-def lucas(n):
+def lucas(n=1):
     """
     Function that takes in a number and calculates the
     term of that number in the fibonacci sequence.
@@ -24,6 +24,8 @@ def lucas(n):
         return 2
     elif n == 1:
         return 1
+    else:
+        return lucas(n - 2) + lucas(n - 1)
 
 
 
