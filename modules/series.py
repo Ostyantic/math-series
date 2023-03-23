@@ -1,8 +1,9 @@
 def fibonacci(n=1):
     """
-
-    :param n:
-    :return:
+    Function that takes in a number and calculates the
+    term of that number in the fibonacci sequence.
+    :param n: nth term in the sequence
+    :return: term number
     """
     if n <= 0:
         return 0
@@ -12,15 +13,17 @@ def fibonacci(n=1):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-
-
 def lucas(n):
     """
-
-    :param n:
-    :return:
+    Function that takes in a number and calculates the
+    term of that number in the fibonacci sequence.
+    :param n: nth term in the sequence
+    :return: term number
     """
-    return n
+    if n <= 0:
+        return 2
+    elif n == 1:
+        return 1
 
 
 
