@@ -92,6 +92,55 @@ def test_lucas_negative():
     assert actual == expected
 
 
+# sum_series test 1
 def test_sum_series_exists():
     assert sum_series(1)
 
+
+# sum_series test 2
+def test_sum_series_zero():
+    actual = sum_series(0)
+    expected = 0
+    assert actual == expected
+
+
+# sum_series test 3
+def test_sum_series_one():
+    actual = sum_series(1)
+    expected = 1
+    assert actual == expected
+
+
+# sum_series test 4
+def test_sum_series_two():
+    actual = sum_series(2)
+    expected = 1
+    assert actual == expected
+
+
+# sum_series test 5
+def test_sum_series_two_with_one_and_two():
+    actual = sum_series(2, 1, 2)
+    expected = 3
+    assert actual == expected
+
+
+# sum_series test 6
+def test_sum_series_ten_with_five_and_six():
+    actual = sum_series(10, 5, 6)
+    expected = 500
+    actual == expected
+
+
+# sum_series test 7
+def test_sum_series_all_zero():
+    actual = sum_series(0, 0, 0)
+    expected = 0
+    assert actual == expected
+
+
+# sum_series test 8
+def test_sum_series_all_one():
+    actual = sum_series(1, 1, 1)
+    expected = 1
+    assert actual == expected
