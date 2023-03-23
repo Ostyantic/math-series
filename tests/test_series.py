@@ -144,3 +144,10 @@ def test_sum_series_all_one():
     actual = sum_series(1, 1, 1)
     expected = 1
     assert actual == expected
+
+
+# sum_series test 8
+def test_sum_series_all_negative():
+    actual = sum_series(-1, -1, -1)
+    expected = 0
+    assert actual == expected
