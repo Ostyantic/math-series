@@ -31,7 +31,7 @@ def lucas(n=1):
 def sum_series(n, start=0, add_to_start=1):
     """
     Function that mimics the logic of the fibonacci and lucas functions;
-    takes in a number and calculates the term of that number
+    Takes in a number and calculates the term of that number
     in the sequence depending on the start and add_to_start params
     :param n: nth term in the sequence
     :param start: starting number in the sequence
@@ -41,7 +41,9 @@ def sum_series(n, start=0, add_to_start=1):
 
     if n <= 0:
         return start
+    elif n <= 0 and start == 0 and add_to_start == 0:
+        return 0
     elif n == 1:
-        return start + add_to_start
-
-    return n
+        return add_to_start
+    else:
+        return sum_series(n - 1, start, add_to_start) + sum_series(n - 2, start, add_to_start)
