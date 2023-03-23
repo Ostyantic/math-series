@@ -28,13 +28,20 @@ def lucas(n=1):
         return lucas(n - 2) + lucas(n - 1)
 
 
-
 def sum_series(n, start=0, add_to_start=1):
     """
-
-    :param n:
-    :param start:
-    :param add_to_start:
+    Function that mimics the logic of the fibonacci and lucas functions;
+    takes in a number and calculates the term of that number
+    in the sequence depending on the start and add_to_start params
+    :param n: nth term in the sequence
+    :param start: starting number in the sequence
+    :param add_to_start: number added to start in beginning of sequence
     :return:
     """
+
+    if n <= 0:
+        return start
+    elif n == 1:
+        return start + add_to_start
+
     return n
