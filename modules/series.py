@@ -1,10 +1,16 @@
-def fibonacci(n):
+def fibonacci(n=1):
     """
 
     :param n:
     :return:
     """
-    pass
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+
+
+
 
 
 def lucas(n):
@@ -13,7 +19,8 @@ def lucas(n):
     :param n:
     :return:
     """
-    pass
+    return n
+
 
 
 def sum_series(n, start=0, add_to_start=1):
@@ -24,4 +31,4 @@ def sum_series(n, start=0, add_to_start=1):
     :param add_to_start:
     :return:
     """
-    pass
+    return n
